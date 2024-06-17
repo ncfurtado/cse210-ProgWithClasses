@@ -1,0 +1,50 @@
+using System;
+
+class Program
+{
+    static float CalculateCircleArea(float radius)
+    {
+        return (float)(Math.PI * radius* radius);
+        
+    }
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello Sandbox World!");
+        Console.WriteLine("This language is compiled! It will take much longer to test code compared to Python.");
+        int x = 10;
+        Console.WriteLine("C# is a strongly typed language, you must give a type to each variable and it NEVER changes.");
+
+int userAge = -1;
+        while (userAge < 0 || userAge > 120)
+        {
+            Console.WriteLine("Please input your age: ");
+            userAge = int.Parse(Console.ReadLine());
+        }
+
+
+        int userAge2 = int.Parse(Console.ReadLine());
+        do 
+        {
+            Console.WriteLine("Please input your age (0-120): ");
+            userAge2 = int.Parse(Console.ReadLine());
+        } while (userAge2 < 0 || userAge2 > 120);
+
+        for (int i = 0; i < 100; i+= 1)
+        {
+            Console.WriteLine("" + i);
+        }
+
+        List<int> myNumbers = new List<int>{1, 2, 3, 4, 5, 6, 7, 8, 9};
+        List<string> myNames = new List<string>();
+
+        myNames.Add("Billy");
+        myNames.Add("Johnny");
+        
+        // This is a comment!!
+
+        // These are for formatted outputs
+        float area = Program.CalculateCircleArea(10);
+        Console.WriteLine($"C2: The circle's area is :{area.ToString("C2")}");
+        Console.WriteLine($"X: The circle's area is :{x.ToString("X")}");
+    }
+}
