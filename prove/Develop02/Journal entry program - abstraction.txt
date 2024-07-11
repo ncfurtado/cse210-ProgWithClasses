@@ -1,0 +1,45 @@
+﻿Journal entry program
+
+
+
+
+  
+
+
+
+The app must:
+
+
+* Record the events of their day
+* Supply prompts 
+* Save responses
+* Save questions
+
+
+
+
+UML Class Diagrams
+
+
+Program
+	* choice : int
+	* DisplayMenu()
+	
+
+Journal
+	* entries : array[entry : Entry]
+	* GetEntry
+* SetEntry
+* DisplayEntries()
+* Save/write Entries to file()
+* Load/Read entries from file()
+	
+
+Entry
+	* question : string
+* response : string
+* date : date
+	* DisplayEntry()
+* GetDate()
+* GetResponse()
+* SetResonse()

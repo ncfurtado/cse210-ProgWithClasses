@@ -1,0 +1,5 @@
+class GoalTracker
+{
+     = new List<>
+
+}

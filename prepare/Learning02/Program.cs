@@ -5,6 +5,10 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello Learning02 World!");
+        // Think of programming with classes as working with 'nouns.'
+        // If you've got a program, talk about things in basic terms and 
+        // then identify specifics like 'jobs' and 'resume'. Often these
+        // nouns will be used as classes, and methods programmed around them.
         Job job1 = new Job();
         job1._company = "Microsoft Corporation";
         job1._jobTitle = "Intern";
